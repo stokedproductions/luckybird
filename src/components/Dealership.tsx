@@ -4,7 +4,7 @@ import IconCard from './iconCard'
 export const Dealerships = () => {
   return (
     <div
-      className="-mt-[162px] h-[1317px]"
+      className="-mt-[162px] h-[1455px]"
       style={{
         background:
           'linear-gradient(180deg, #00000000 0%, #000000ff 12%, #000000ff 100%',

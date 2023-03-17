@@ -208,56 +208,59 @@ const Section3 = () => {
 
 const Section4 = () => {
   return (
-    <div className="mx-auto my-20 w-[60%]">
-      <div>
-        <div className="">
-          <div className="grid grid-cols-2 items-center justify-center gap-10">
-            <div className="flex w-full flex-col items-center justify-center">
-              <div className="mx-auto flex w-[520px] flex-col justify-center">
-                <h3 className="mb-[25px] font-bebas text-[24px] uppercase leading-[29px]">
-                  something goes wrong?
-                </h3>
-                <p className="mb-[25px] font-poppins text-[48px] font-semibold leading-[105%]">
-                  Immediate armed response.
-                </p>
-                <p className="font-poppins text-[16px] leading-[140%]">
-                  If for any reason something goes wrong, both buyer and seller
-                  can use the panic button and get instant armed response by
-                  AURA security services. Stay safe with Dealr.
-                </p>
+    <>
+      <div className='bubble'></div>
+      <div className="mx-auto my-20 w-[60%]">
+        <div>
+          <div className="">
+            <div className="grid grid-cols-2 items-center justify-center gap-10">
+              <div className="flex w-full flex-col items-center justify-center">
+                <div className="mx-auto flex w-[520px] flex-col justify-center">
+                  <h3 className="mb-[25px] font-bebas text-[24px] uppercase leading-[29px]">
+                    something goes wrong?
+                  </h3>
+                  <p className="mb-[25px] font-poppins text-[48px] font-semibold leading-[105%]">
+                    Immediate armed response.
+                  </p>
+                  <p className="font-poppins text-[16px] leading-[140%]">
+                    If for any reason something goes wrong, both buyer and seller
+                    can use the panic button and get instant armed response by
+                    AURA security services. Stay safe with Dealr.
+                  </p>
+                </div>
+                <div className="mx-auto mt-[25px] flex w-[293.32px] items-center justify-between">
+                  <div className="h-[42px] w-[125.82px] rounded-xl">
+                    <Image
+                      src="/AppStoreBadge.png"
+                      alt="Download from the apple app store"
+                      width="126"
+                      height="42"
+                    />
+                  </div>
+                  <div className="h-[42px] w-[141.82px] rounded-xl">
+                    <Image
+                      src="/GooglePlay.png"
+                      alt="Download from the android play store"
+                      width="142"
+                      height="42"
+                    />
+                  </div>
+                </div>
               </div>
-              <div className="mx-auto mt-[25px] flex w-[293.32px] items-center justify-between">
-                <div className="h-[42px] w-[125.82px] rounded-xl">
+              <div className="relative flex w-full flex-col items-center justify-center">
+                <div className="w-[470px]">
                   <Image
-                    src="/AppStoreBadge.png"
-                    alt="Download from the apple app store"
-                    width="126"
-                    height="42"
+                    src="/app2.png"
+                    width={470}
+                    height={68}
+                    alt="app photo"
                   />
                 </div>
-                <div className="h-[42px] w-[141.82px] rounded-xl">
-                  <Image
-                    src="/GooglePlay.png"
-                    alt="Download from the android play store"
-                    width="142"
-                    height="42"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="relative flex w-full flex-col items-center justify-center">
-              <div className="w-[470px]">
-                <Image
-                  src="/app2.png"
-                  width={470}
-                  height={68}
-                  alt="app photo"
-                />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }

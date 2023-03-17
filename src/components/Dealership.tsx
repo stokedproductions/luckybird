@@ -1,13 +1,18 @@
-import Image from "next/image"
-import IconCard from "./iconCard"
+import Image from 'next/image'
+import IconCard from './iconCard'
 
 export const Dealerships = () => {
-    return (
-      <div className="h-[1317px] -mt-[162px]"
-        style={{background: 'linear-gradient(180deg, #00000000 0%, #000000ff 12%, #000000ff 100%'}}>
-        <div className="w-full h-[268px] relative">
-        <Image src="/dealer-top.svg" alt ="bg" fill className="absolute" />
-        <div className="relative -mt-150px">
+  return (
+    <div
+      className="-mt-[162px] h-[1317px]"
+      style={{
+        background:
+          'linear-gradient(180deg, #00000000 0%, #000000ff 12%, #000000ff 100%',
+      }}
+    >
+      <div className="relative h-[268px] w-full">
+        <Image src="/dealer-top.svg" alt="bg" fill className="absolute" />
+        <div className="-mt-150px relative">
           <div className="mx-auto flex w-[60%] flex-col items-center justify-center">
             <div className="my-[108px] flex flex-col justify-center">
               <p className="mb-[5px] text-center text-[24px] uppercase text-white">
@@ -26,10 +31,22 @@ export const Dealerships = () => {
             </div>
             <div className="">
               <div className="mx-auto grid w-[772px] grid-cols-4 gap-5">
-                <IconCard title="integrated" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
-                <IconCard title="organized" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
-                <IconCard title="bulk actions" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
-                <IconCard title="geo-located" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                <IconCard
+                  title="integrated"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                />
+                <IconCard
+                  title="organized"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                />
+                <IconCard
+                  title="bulk actions"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                />
+                <IconCard
+                  title="geo-located"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                />
               </div>
               <div className="-z-10 -mt-[90px]">
                 <Image
@@ -42,7 +59,7 @@ export const Dealerships = () => {
             </div>
           </div>
         </div>
-        </div>
       </div>
-    )
-  }
+    </div>
+  )
+}

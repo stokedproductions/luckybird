@@ -5,22 +5,27 @@ import React, { useCallback, useEffect, useState } from 'react'
 
 function Header() {
   const [navbar, setNavbar] = useState(false)
-  const [hasBgColor, setHasBgColor] = useState(false);
+  const [hasBgColor, setHasBgColor] = useState(false)
   const router = useRouter()
 
   const scrolled = useCallback(() => {
-    const scrollPos = document.documentElement.scrollTop;
-    scrollPos > 184 ? setHasBgColor(true) : setHasBgColor(false);
+    const scrollPos = document.documentElement.scrollTop
+    scrollPos > 184 ? setHasBgColor(true) : setHasBgColor(false)
   }, [])
- 
+
   useEffect(() => {
-    window.addEventListener("scroll", scrolled );
-    return () => window.removeEventListener("scroll", scrolled);
+    window.addEventListener('scroll', scrolled)
+    return () => window.removeEventListener('scroll', scrolled)
   }, [scrolled])
 
   return (
     <>
-      <nav className={"fixed w-full pb-10 z-50 " + `${hasBgColor ? "bg-[#00000040] " : "bg-transparent"}`}>
+      <nav
+        className={
+          'fixed z-50 w-full pb-10 ' +
+          `${hasBgColor ? 'bg-[#00000040] ' : 'bg-transparent'}`
+        }
+      >
         <div className="mx-auto w-[90%] justify-between md:w-[60%] hideButton:flex hideButton:items-center hideButton:pr-5">
           <div>
             <div className="flex justify-between py-3 px-5 lg:py-3 hideButton:block">

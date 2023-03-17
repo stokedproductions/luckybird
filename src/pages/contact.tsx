@@ -36,12 +36,12 @@ const ContactForm = () => {
                 <input
                   type="text"
                   id="name"
-                  className="w-full py-1 mb-16 transition-colors border-b peer focus:border-b-2 focus:border-blue-500 focus:outline-none"
+                  className="peer mb-16 w-full border-b py-1 transition-colors focus:border-b-2 focus:border-blue-500 focus:outline-none"
                   autoComplete="off"
                 />
                 <label
                   htmlFor="name"
-                  className="absolute left-0 text-gray-600 transition-all top-1 cursor-text peer-focus:-top-4 peer-focus:text-xs peer-focus:text-blue-500"
+                  className="absolute left-0 top-1 cursor-text text-gray-600 transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-blue-500"
                 >
                   Name
                 </label>
@@ -50,12 +50,12 @@ const ContactForm = () => {
                 <input
                   type="text"
                   id="email"
-                  className="w-full py-1 mb-16 transition-colors border-b peer focus:border-b-2 focus:border-blue-500 focus:outline-none"
+                  className="peer mb-16 w-full border-b py-1 transition-colors focus:border-b-2 focus:border-blue-500 focus:outline-none"
                   autoComplete="off"
                 />
                 <label
                   htmlFor="email"
-                  className="absolute left-0 text-gray-600 transition-all top-1 cursor-text peer-focus:-top-4 peer-focus:text-xs peer-focus:text-blue-500"
+                  className="absolute left-0 top-1 cursor-text text-gray-600 transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-blue-500"
                 >
                   Email
                 </label>
@@ -64,12 +64,12 @@ const ContactForm = () => {
                 <input
                   type="text"
                   id="phone"
-                  className="w-full py-1 mb-16 transition-colors border-b peer focus:border-b-2 focus:border-blue-500 focus:outline-none"
+                  className="peer mb-16 w-full border-b py-1 transition-colors focus:border-b-2 focus:border-blue-500 focus:outline-none"
                   autoComplete="off"
                 />
                 <label
                   htmlFor="phone"
-                  className="absolute left-0 text-gray-600 transition-all top-1 cursor-text peer-focus:-top-4 peer-focus:text-xs peer-focus:text-blue-500"
+                  className="absolute left-0 top-1 cursor-text text-gray-600 transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-blue-500"
                 >
                   Phone
                 </label>
@@ -78,12 +78,12 @@ const ContactForm = () => {
                 <input
                   type="text"
                   id="company"
-                  className="w-full py-1 mb-16 transition-colors border-b peer focus:border-b-2 focus:border-blue-500 focus:outline-none"
+                  className="peer mb-16 w-full border-b py-1 transition-colors focus:border-b-2 focus:border-blue-500 focus:outline-none"
                   autoComplete="off"
                 />
                 <label
                   htmlFor="company"
-                  className="absolute left-0 text-gray-600 transition-all top-1 cursor-text peer-focus:-top-4 peer-focus:text-xs peer-focus:text-blue-500"
+                  className="absolute left-0 top-1 cursor-text text-gray-600 transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-blue-500"
                 >
                   Company
                 </label>
@@ -91,13 +91,13 @@ const ContactForm = () => {
               <div className="relative">
                 <select
                   id="roleInCompany"
-                  className="w-full py-1 mb-16 transition-colors border-b peer focus:border-b-2 focus:border-blue-500 focus:outline-none"
+                  className="peer mb-16 w-full border-b py-1 transition-colors focus:border-b-2 focus:border-blue-500 focus:outline-none"
                 >
                   <option></option>
                 </select>
                 <label
                   htmlFor="roleInCompany"
-                  className="absolute left-0 text-gray-600 transition-all top-1 cursor-text peer-focus:-top-4 peer-focus:text-xs peer-focus:text-blue-500"
+                  className="absolute left-0 top-1 cursor-text text-gray-600 transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-blue-500"
                 >
                   Role in Company
                 </label>
@@ -119,23 +119,23 @@ const ContactForm = () => {
 }
 
 const Articles = () => {
-    const [articleList, setArticleList] = useState(null);
-    const [loading, setLoading] = useState(true);
+  const [articleList, setArticleList] = useState(null)
+  const [loading, setLoading] = useState(true)
 
-    const getArticles = async () => {
-        const sub = await fetch('');
-    }
+  const getArticles = async () => {
+    const sub = await fetch('')
+  }
 
-    useEffect(() => {
-        
-    }, [])
-    return (<div className='py-20 bg-black'>
-        <div>
-            <div className='w-[60%] mx-auto'>
-                <h4 className='text-white'>Articles</h4>
-                <h4 className='text-white'>Articles</h4>
-                <h4 className='text-white'>Articles</h4>
-            </div>
+  useEffect(() => {}, [])
+  return (
+    <div className="bg-black py-20">
+      <div>
+        <div className="mx-auto w-[60%]">
+          <h4 className="text-white">Articles</h4>
+          <h4 className="text-white">Articles</h4>
+          <h4 className="text-white">Articles</h4>
         </div>
-    </div>)
+      </div>
+    </div>
+  )
 }

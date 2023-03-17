@@ -17,7 +17,7 @@ module.exports = {
       fontFamily: {
         sans: [...fontFamily.sans],
         poppins: ['var(--font-poppins)'],
-        bebas : [`var(--font-bebasNueue)`]
+        bebas: [`var(--font-bebasNueue)`],
       },
     },
   },

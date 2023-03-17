@@ -15,7 +15,7 @@ const bebasNeue = Bebas_Neue({
   weight: ['400'],
   subsets: ['latin'],
   variable: '--font-bebasNueue',
-});
+})
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

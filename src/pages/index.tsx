@@ -12,7 +12,7 @@ export default function Home() {
         <Section2 />
         <Section3 />
         <Dealerships />
-        {/* <Section4 /> */}
+        <Section4 />
       </main>
     </>
   )
@@ -20,6 +20,7 @@ export default function Home() {
 
 const HeroSection = () => {
   return (
+    <>
     <div
       className="flex h-[840px] flex-col justify-center"
       style={{ backgroundImage: 'url(./hero-image.png)' }}
@@ -56,6 +57,10 @@ const HeroSection = () => {
       </div>
       {/* <div className='w-[50px] h-[50px] rounded-full bg-white absolute bottom-5'></div> */}
     </div>
+    <div className='w-full h-[260px] absolute -bottom-[0px]'>
+    <Image src="/blue-top.svg" alt="blue-top" fill />
+  </div>
+  </>
   )
 }
 

@@ -69,18 +69,18 @@ const ContactForm = () => {
   })
 
   return (
-    <div className="w-full bg-blue-500 py-[200px]">
+    <div className="w-full bg-blue-500 pt-[200px] pb-[100px] lg:py-[200px]">
       <div>
-        <div className="mx-auto flex w-[800px] flex-col items-center justify-center">
+        <div className="mx-auto flex w-[95%] lg:w-[800px] flex-col items-center justify-center">
           <h1 className="mb-[25px] text-center text-[62px] text-white">
             Request a Demo
           </h1>
-          <p className="w-[450px] text-center text-white">
+          <p className="w-[80%] lg:w-[450px] mx-auto text-center text-white">
             If you are a professional, we offer a desktop admin platform, to
             allow a better and faster management of your whole business
           </p>
         </div>
-        <div className="mx-auto mt-[108px] w-[873px] rounded-3xl bg-white p-10 shadow-lg">
+        <div className="mx-auto mt-[108px] w-[95%] lg:w-[873px] rounded-3xl bg-white p-10 shadow-lg">
           <h2 className="mb-[20px] font-poppins text-[42px] font-semibold">
             Please fill your application
           </h2>

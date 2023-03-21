@@ -16,3 +16,17 @@
   height: 146px;
   margin-top: -140px;
 }
+
+.black-bg {
+  background: #000000;
+}
+
+@media (min-width: 1024px) {
+  .black-bg {
+    background: linear-gradient(180deg, #00000000 0%, #000000ff 12%, #000000ff 100%);
+}
+}
+
+
+
+@media(min-win)

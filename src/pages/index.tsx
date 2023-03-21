@@ -56,7 +56,7 @@ const HeroSection = () => {
           </div>
         </div>
         {/* <div className='w-[50px] h-[50px] rounded-full bg-white absolute bottom-5'></div> */}
-        <div className="absolute bottom-0 w-full" style={{
+        <div className="absolute bottom-10 lg:bottom-0 w-full" style={{
             aspectRatio: 1920/260
           }}>
             <Image src="/blue-top.svg" alt="blue-top" fill />
@@ -170,7 +170,7 @@ const Section2 = () => {
 const Section3 = () => {
   return (
     <div id="sellers" className="bg-gradient-to-b from-[#5A89EA] to-black">
-      <div className="flex w-full flex-col bg-[url('/Union.png')] bg-center bg-cover lg:bg-left-top" style={{aspectRatio: 1920/886}}>
+      <div className="flex w-full flex-col bg-[url('/Union.png')] bg-center bg-cover bg-no-repeat lg:bg-left-top" style={{aspectRatio: 1920/886}}>
         <div className="mx-auto mt-[138px] flex flex-col items-center justify-center">
           <div className="flex flex-col justify-center">
             <h3 className="mb-[38px] text-center font-poppins text-[62px] font-semibold leading-[105%] text-white">

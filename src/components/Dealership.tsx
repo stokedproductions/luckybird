@@ -5,14 +5,12 @@ export const Dealerships = () => {
   return (
     <div
       id="dealerships"
-      className="lg:-mt-[162px] h-[1455px]"
-      style={{
-        background:
-          'linear-gradient(180deg, #00000000 0%, #000000ff 12%, #000000ff 100%',
-      }}
+      className="lg:-mt-[172px] h-[1350px] lg:h-[1455px] black-bg"
     >
-      <div className="relative lg:h-[268px] w-full">
-        <Image src="/dealer-top.svg" alt="bg" fill className="absolute" />
+      <div className="w-full">
+        <div className='w-full absolute' style={{aspectRatio: 1920/268}}>
+          <Image src="/dealer-top.svg" alt="bg" fill className="absolute" />
+        </div>
         <div className="-mt-150px relative">
           <div className="mx-auto flex w-[95] lg:w-[60%] flex-col items-center justify-center">
             <div className="my-[108px] flex flex-col justify-center">

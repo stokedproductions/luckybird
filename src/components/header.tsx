@@ -22,13 +22,13 @@ function Header() {
     <>
       <nav
         className={
-          'fixed z-50 w-full pb-10 ' +
+          'absolute z-50 w-full pb-10 ' + // fixed 
           `${hasBgColor ? 'bg-[#00000040] ' : 'bg-transparent'}`
         }
       >
-        <div className="mx-auto w-[90%] justify-between md:w-[60%] hideButton:flex hideButton:items-center hideButton:pr-5">
+        <div className="mx-auto w-[90%] justify-between md:w-[60%] hideButton:flex hideButton:py-5 hideButton:pr-5">
           <div>
-            <div className="flex justify-between py-3 px-5 lg:py-3 hideButton:block">
+            <div className="flex justify-between py-3 px-5 hideButton:block">
               <div className="relative h-[55px] w-[175px] md:h-[100px] md:w-[300px]">
                 <Link href="/" passHref>
                   <Image
@@ -39,7 +39,7 @@ function Header() {
                   />
                 </Link>
               </div>
-              <div className="flex items-center justify-center hideButton:hidden">
+              <div className="flex hideButton:hidden">
                 <button
                   className="rounded-md p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
                   onClick={() => setNavbar(!navbar)}
@@ -83,23 +83,23 @@ function Header() {
                 navbar ? 'block' : 'hidden'
               }`}
             >
-              <ul className="ml-10 items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
-                <li className="text-white">
+              <ul className="ml-10 lg:flex lg:space-x-6 lg:space-y-0">
+                <li className="text-white py-2">
                   <Link href="#">
                     <p>For Buys</p>
                   </Link>
                 </li>
-                <li className="text-white">
+                <li className="text-white py-2">
                   <Link href="#">
                     <p>For Sellers</p>
                   </Link>
                 </li>
-                <li className="text-white">
+                <li className="text-white py-2">
                   <Link href="#">
                     <p>Dealers</p>
                   </Link>
                 </li>
-                <li className="text-white">
+                <li className="text-white py-2">
                   <Link href="#">
                     <p>Security</p>
                   </Link>

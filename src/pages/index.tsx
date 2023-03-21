@@ -101,15 +101,15 @@ const Section2 = () => {
               </p>
               <ul className="flex flex-col">
                 <li className="flex gap-2 font-poppins text-[16px] text-white">
-                  <Image src="/icon.svg" width={48} height={47} alt="Icon" />
+                  <Image src="/Icon.svg" width={48} height={47} alt="Icon" />
                   Multiple filtering options
                 </li>
                 <li className="flex gap-2 font-poppins text-[16px] text-white">
-                  <Image src="/icon.svg" width={48} height={47} alt="Icon" />
+                  <Image src="/Icon.svg" width={48} height={47} alt="Icon" />
                   Test drives with both private sellers or dealerships
                 </li>
                 <li className="flex gap-2 font-poppins text-[16px] text-white">
-                  <Image src="/icon.svg" width={48} height={47} alt="Icon" className="self-center" />
+                  <Image src="/Icon.svg" width={48} height={47} alt="Icon" className="self-center" />
                   Take pictures and notes during test drive
                 </li>
               </ul>
@@ -131,15 +131,15 @@ const Section2 = () => {
               </p>
               <ul className="list-inside list-disc">
                 <li className="flex gap-2 text-[16px] text-white">
-                  <Image src="/icon.svg" width={48} height={47} alt="Icon" />
+                  <Image src="/Icon.svg" width={48} height={47} alt="Icon" />
                   Secure and verified registration
                 </li>
                 <li className="flex gap-2 font-poppins text-[16px] text-white">
-                  <Image src="/icon.svg" width={48} height={47} alt="Icon" />
+                  <Image src="/Icon.svg" width={48} height={47} alt="Icon" />
                   Direct messaging with the seller
                 </li>
                 <li className="flex gap-2 font-poppins text-[16px] text-white">
-                  <Image src="/icon.svg" width={48} height={47} alt="Icon" />
+                  <Image src="/Icon.svg" width={48} height={47} alt="Icon" />
                   Instant armed response if something goes wrong
                 </li>
               </ul>

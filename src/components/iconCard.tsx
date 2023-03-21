@@ -8,7 +8,7 @@ interface blueIconCardtyep {
 
 const IconCard = (props: blueIconCardtyep) => {
   return (
-    <div className="z-50 flex w-[172px] flex-col items-start gap-[6px] rounded-md bg-white p-[17px]">
+    <div className="z-50 flex lg:w-[172px] flex-col items-start gap-[6px] rounded-md bg-white p-[17px]">
       <Image src="/icon-blue.svg" width={48} height={47} alt="Icon" />
       <h4 className="mt-[17px] font-bebas text-[20px] uppercase text-[#030303]">
         {props.title}

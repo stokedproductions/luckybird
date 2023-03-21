@@ -25,12 +25,12 @@ const HeroSection = () => {
         className="flex h-[840px] flex-col justify-center"
         style={{ backgroundImage: 'url(./hero-image.png)' }}
       >
-        <div className="mx-auto w-[60%]">
+        <div className="mx-auto w-[95%] lg:w-[60%]">
           <div className="">
-            <h1 className="text-poppins mb-[25px] text-center text-[62px] font-semibold text-white">
+            <h1 className="text-poppins mb-[25px] text-center text-[62px] leading-[105%] font-semibold text-white">
               A new era for test-drives
             </h1>
-            <p className="texl-[16px] mx-auto w-[40%] text-center font-poppins font-normal leading-[24px] text-white">
+            <p className="texl-[16px] mx-auto lg:w-[40%] text-center font-poppins font-normal leading-[24px] text-white">
               Enhanced test drive experience through the connection of people in
               a secure, scheduled and convenient manner to ensure the seamless
               buying and selling of new and used vehicles.{' '}
@@ -56,10 +56,13 @@ const HeroSection = () => {
           </div>
         </div>
         {/* <div className='w-[50px] h-[50px] rounded-full bg-white absolute bottom-5'></div> */}
+        <div className="absolute bottom-10 lg:bottom-0 w-full" style={{
+            aspectRatio: 1920/260
+          }}>
+            <Image src="/blue-top.svg" alt="blue-top" fill />
+        </div>
       </div>
-      <div className="absolute -bottom-[0px] h-[260px] w-full">
-        <Image src="/blue-top.svg" alt="blue-top" fill />
-      </div>
+      
     </>
   )
 }
@@ -67,25 +70,28 @@ const HeroSection = () => {
 const Section2 = () => {
   return (
     <div id="buyers" className="bg-[#5A89EA] py-20">
-      <div className="mx-auto w-[60%]">
-        <div className="grid grid-cols-2 gap-x-10 pt-[25px]">
-          <div className="relative flex h-[590px] w-full flex-col items-center justify-center">
+      <div className="mx-auto w-[95%] lg:w-[60%]">
+        <div className="grid grid-1 lg:grid-cols-2 gap-x-10 pt-[25px]">
+
+          <div className="relative flex lg:h-[590px]  w-full flex-col items-center justify-center order-last lg:order-first">
             <div
-              className="absolute bottom-2 h-[384.8px] w-[520px]"
+              className="absolute bottom-2 max-w-[520px] w-full"
               style={{
                 background: 'linear-gradient(180deg, #5A89EA 0%, #030303 100%)',
                 boxShadow: 'inset 0px -12.48px 16.64px rgba(0, 0, 0, 0.25)',
                 borderRadius: '0px 0px 60.9221px 60.9221px',
+                aspectRatio: 520/385
               }}
             ></div>
-            <div className="z-10 h-[592px] w-[325px]">
+            <div className="z-10  max-w-[325px]" style={{aspectRatio: 325/592}}>
               <Image src="/app1.png" alt="app demo" width={324} height={592} />
             </div>
           </div>
 
-          <div className="flex h-[500px] w-full flex-col items-center justify-center">
-            <div className="mx-auto w-[520px]">
-              <h3 className="mb-[25px] font-poppins text-[42px] font-semibold leading-[50.4px] text-white">
+          <div className="flex lg:h-[500px] w-full flex-col items-center justify-center mb-10 lg:mb-0">
+            <div className="mx-auto lg:w-[520px]">
+              <h3 className="mb-[25px] font-poppins text-[35px] lg:text-[42px] 
+                font-semibold leading-[105%] text-white text-center lg:text-left">
                 Search for the car of your dreams and test drive it
               </h3>
               <p className="mb-[25px] font-poppins text-[16px] leading-[22.4px] text-white">
@@ -93,7 +99,7 @@ const Section2 = () => {
                 malesuada habitant odio eu etiam proin odio habitant. Elit felis
                 aliquam suspendisse amet nunc. Erat.
               </p>
-              <ul className="">
+              <ul className="flex flex-col">
                 <li className="flex gap-2 font-poppins text-[16px] text-white">
                   <Image src="/icon.svg" width={48} height={47} alt="Icon" />
                   Multiple filtering options
@@ -103,7 +109,7 @@ const Section2 = () => {
                   Test drives with both private sellers or dealerships
                 </li>
                 <li className="flex gap-2 font-poppins text-[16px] text-white">
-                  <Image src="/icon.svg" width={48} height={47} alt="Icon" />
+                  <Image src="/icon.svg" width={48} height={47} alt="Icon" className="self-center" />
                   Take pictures and notes during test drive
                 </li>
               </ul>
@@ -111,10 +117,11 @@ const Section2 = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-10 pt-[100px]">
-          <div className="flex h-[500px] w-full flex-col items-center justify-center">
-            <div className="mx-auto w-[520px]">
-              <h3 className="mb-[25px] font-poppins text-[42px] font-semibold leading-[50.4px] text-white">
+        <div className="grid lg:grid-cols-2 gap-10 pt-[100px]">
+          <div className="flex lg:h-[500px] w-full flex-col items-center justify-center">
+            <div className="mx-auto lg:w-[520px]">
+              <h3 className="mb-[25px] font-poppins text-[35px] lg:text-[42px] 
+                font-semibold leading-[105%] text-white text-center lg:text-left">
                 Only real people
               </h3>
               <p className="mb-[25px] font-poppins text-[16px] leading-[22.4px] text-white">
@@ -138,19 +145,22 @@ const Section2 = () => {
               </ul>
             </div>
           </div>
-          <div className="relative flex h-[590px] w-full flex-col items-center justify-center">
+
+          <div className="relative flex h-[590px] w-full flex-col items-center justify-center mt-10 lg:mt-0">
             <div
-              className="absolute bottom-2 h-[384.8px] w-[520px]"
+              className="absolute bottom-2 max-w-[520px] w-full"
               style={{
                 background: 'linear-gradient(180deg, #5A89EA 0%, #030303 100%)',
                 boxShadow: 'inset 0px -12.48px 16.64px rgba(0, 0, 0, 0.25)',
                 borderRadius: '0px 0px 60.9221px 60.9221px',
+                aspectRatio: 520/385
               }}
             ></div>
-            <div className="z-10 h-[592px] w-[325px]">
+            <div className="z-10  max-w-[325px]" style={{aspectRatio: 325/592}}>
               <Image src="/app1.png" alt="app demo" width={324} height={592} />
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -160,20 +170,20 @@ const Section2 = () => {
 const Section3 = () => {
   return (
     <div id="sellers" className="bg-gradient-to-b from-[#5A89EA] to-black">
-      <div className="flex h-[886px] flex-col bg-[url('/Union.png')]">
+      <div className="flex w-full flex-col bg-[url('/Union.png')] bg-center bg-cover lg:bg-left-top" style={{aspectRatio: 1920/886}}>
         <div className="mx-auto mt-[138px] flex flex-col items-center justify-center">
           <div className="flex flex-col justify-center">
             <h3 className="mb-[38px] text-center font-poppins text-[62px] font-semibold leading-[105%] text-white">
               Private seller? <br /> We got your back
             </h3>
-            <p className="mb-[36px] w-[470px] text-center font-poppins text-[16px] leading-[22.4px] text-white">
+            <p className="mb-[36px] lg:w-[470px] text-center font-poppins text-[16px] leading-[22.4px] text-white">
               Want to sell your current car? Put it on Dealr, schedule
               appointments and take advantage of our integrated financing
               engine.
             </p>
           </div>
           <div>
-            <div className="mx-auto grid grid-cols-6 gap-5">
+            <div className="mx-auto grid grid-cols-2 lg:grid-cols-6 gap-5 pb-10 lg:pb-0">
               <IconCard
                 title="verified buys"
                 description="Secure and verified registration"
@@ -210,12 +220,12 @@ const Section4 = () => {
   return (
     <div id="security">
       <div className="bubble"></div>
-      <div className="mx-auto my-20 w-[60%]">
+      <div className="mx-auto my-20 w-[95%] lg:w-[60%]">
         <div>
           <div className="">
-            <div className="grid grid-cols-2 items-center justify-center gap-10">
+            <div className="grid grid-1 lg:grid-cols-2 items-center justify-center gap-10">
               <div className="flex w-full flex-col items-center justify-center">
-                <div className="mx-auto flex w-[520px] flex-col justify-center">
+                <div className="mx-auto flex w-[95%] lg:w-[520px] flex-col justify-center">
                   <h3 className="mb-[25px] font-bebas text-[24px] uppercase leading-[29px]">
                     something goes wrong?
                   </h3>
@@ -229,7 +239,7 @@ const Section4 = () => {
                   </p>
                 </div>
                 <div className="mx-auto mt-[25px] flex w-[293.32px] items-center justify-between">
-                  <div className="h-[42px] w-[125.82px] rounded-xl">
+                  <div className="w-[125.82px] rounded-xl">
                     <Image
                       src="/AppStoreBadge.png"
                       alt="Download from the apple app store"
@@ -248,7 +258,7 @@ const Section4 = () => {
                 </div>
               </div>
               <div className="relative flex w-full flex-col items-center justify-center">
-                <div className="w-[470px]">
+                <div className="w-[95%] lg:w-[470px]" style={{aspectRatio: 470/62}}>
                   <Image
                     src="/app2.png"
                     width={470}

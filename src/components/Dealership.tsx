@@ -4,6 +4,7 @@ import IconCard from './iconCard'
 export const Dealerships = () => {
   return (
     <div
+      id="dealerships"
       className="-mt-[162px] h-[1455px]"
       style={{
         background:

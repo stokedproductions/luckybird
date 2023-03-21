@@ -6,16 +6,13 @@ const Contact = () => {
   return (
     <div>
       <ContactForm />
-      {/* <Dealerships /> */}
+      <Dealerships />
       {/* <Articles /> */}
     </div>
   )
 }
 
 export default Contact
-
-
-
 
 const Articles = () => {
   const [articleList, setArticleList] = useState(null)
@@ -27,7 +24,7 @@ const Articles = () => {
 
   useEffect(() => {}, [])
   return (
-    <div className="py-20 bg-black">
+    <div className="bg-black py-20">
       <div>
         <div className="mx-auto w-[60%]">
           <h4 className="text-white">Articles</h4>

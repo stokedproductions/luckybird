@@ -22,7 +22,7 @@ function Header() {
     <>
       <nav
         className={
-          'absolute z-50 w-full pb-10 ' + // fixed 
+          'absolute z-50 w-full pb-10 ' + // fixed
           `${hasBgColor ? 'bg-[#00000040] ' : 'bg-transparent'}`
         }
       >
@@ -84,30 +84,30 @@ function Header() {
               }`}
             >
               <ul className="ml-10 lg:flex lg:space-x-6 lg:space-y-0">
-                <li className="text-white py-2">
-                  <Link href="#">
+                <li className="py-2 text-white">
+                  <Link href="#buyers">
                     <p>For Buys</p>
                   </Link>
                 </li>
-                <li className="text-white py-2">
-                  <Link href="#">
+                <li className="py-2 text-white">
+                  <Link href="#sellers">
                     <p>For Sellers</p>
                   </Link>
                 </li>
-                <li className="text-white py-2">
-                  <Link href="#">
+                <li className="py-2 text-white">
+                  <Link href="#dealerships">
                     <p>Dealers</p>
                   </Link>
                 </li>
-                <li className="text-white py-2">
-                  <Link href="#">
+                <li className="py-2 text-white">
+                  <Link href="#security">
                     <p>Security</p>
                   </Link>
                 </li>
                 <li className="rounded-md bg-blue-400 py-2 px-5 text-white">
-                  <Link href="#">
+                  <a href="https://www.luckybeard.com" target="blank">
                     <p>Dealers Login</p>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

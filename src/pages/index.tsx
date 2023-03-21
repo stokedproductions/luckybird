@@ -21,52 +21,52 @@ export default function Home() {
 const HeroSection = () => {
   return (
     <>
-    <div
-      className="flex h-[840px] flex-col justify-center"
-      style={{ backgroundImage: 'url(./hero-image.png)' }}
-    >
-      <div className="mx-auto w-[60%]">
-        <div className="">
-          <h1 className="text-poppins mb-[25px] text-center text-[62px] font-semibold text-white">
-            A new era for test-drives
-          </h1>
-          <p className="texl-[16px] mx-auto w-[40%] text-center font-poppins font-normal leading-[24px] text-white">
-            Enhanced test drive experience through the connection of people in a
-            secure, scheduled and convenient manner to ensure the seamless
-            buying and selling of new and used vehicles.{' '}
-          </p>
-          <div className="mx-auto mt-[25px] flex w-[293.32px] items-center justify-between">
-            <div className="h-[42px] w-[125.82px] rounded-xl">
-              <Image
-                src="/AppStoreBadge.png"
-                alt="Download from the apple app store"
-                width="126"
-                height="42"
-              />
-            </div>
-            <div className="h-[42px] w-[141.82px] rounded-xl">
-              <Image
-                src="/GooglePlay.png"
-                alt="Download from the android play store"
-                width="142"
-                height="42"
-              />
+      <div
+        className="flex h-[840px] flex-col justify-center"
+        style={{ backgroundImage: 'url(./hero-image.png)' }}
+      >
+        <div className="mx-auto w-[60%]">
+          <div className="">
+            <h1 className="text-poppins mb-[25px] text-center text-[62px] font-semibold text-white">
+              A new era for test-drives
+            </h1>
+            <p className="texl-[16px] mx-auto w-[40%] text-center font-poppins font-normal leading-[24px] text-white">
+              Enhanced test drive experience through the connection of people in
+              a secure, scheduled and convenient manner to ensure the seamless
+              buying and selling of new and used vehicles.{' '}
+            </p>
+            <div className="mx-auto mt-[25px] flex w-[293.32px] items-center justify-between">
+              <div className="h-[42px] w-[125.82px] rounded-xl">
+                <Image
+                  src="/AppStoreBadge.png"
+                  alt="Download from the apple app store"
+                  width="126"
+                  height="42"
+                />
+              </div>
+              <div className="h-[42px] w-[141.82px] rounded-xl">
+                <Image
+                  src="/GooglePlay.png"
+                  alt="Download from the android play store"
+                  width="142"
+                  height="42"
+                />
+              </div>
             </div>
           </div>
         </div>
+        {/* <div className='w-[50px] h-[50px] rounded-full bg-white absolute bottom-5'></div> */}
       </div>
-      {/* <div className='w-[50px] h-[50px] rounded-full bg-white absolute bottom-5'></div> */}
-    </div>
-    <div className='w-full h-[260px] absolute -bottom-[0px]'>
-    <Image src="/blue-top.svg" alt="blue-top" fill />
-  </div>
-  </>
+      <div className="absolute -bottom-[0px] h-[260px] w-full">
+        <Image src="/blue-top.svg" alt="blue-top" fill />
+      </div>
+    </>
   )
 }
 
 const Section2 = () => {
   return (
-    <div className="bg-[#5A89EA] py-20">
+    <div id="buyers" className="bg-[#5A89EA] py-20">
       <div className="mx-auto w-[60%]">
         <div className="grid grid-cols-2 gap-x-10 pt-[25px]">
           <div className="relative flex h-[590px] w-full flex-col items-center justify-center">
@@ -159,7 +159,7 @@ const Section2 = () => {
 
 const Section3 = () => {
   return (
-    <div className="bg-gradient-to-b from-[#5A89EA] to-black">
+    <div id="sellers" className="bg-gradient-to-b from-[#5A89EA] to-black">
       <div className="flex h-[886px] flex-col bg-[url('/Union.png')]">
         <div className="mx-auto mt-[138px] flex flex-col items-center justify-center">
           <div className="flex flex-col justify-center">
@@ -208,8 +208,8 @@ const Section3 = () => {
 
 const Section4 = () => {
   return (
-    <>
-      <div className='bubble'></div>
+    <div id="security">
+      <div className="bubble"></div>
       <div className="mx-auto my-20 w-[60%]">
         <div>
           <div className="">
@@ -223,9 +223,9 @@ const Section4 = () => {
                     Immediate armed response.
                   </p>
                   <p className="font-poppins text-[16px] leading-[140%]">
-                    If for any reason something goes wrong, both buyer and seller
-                    can use the panic button and get instant armed response by
-                    AURA security services. Stay safe with Dealr.
+                    If for any reason something goes wrong, both buyer and
+                    seller can use the panic button and get instant armed
+                    response by AURA security services. Stay safe with Dealr.
                   </p>
                 </div>
                 <div className="mx-auto mt-[25px] flex w-[293.32px] items-center justify-between">
@@ -261,6 +261,6 @@ const Section4 = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }

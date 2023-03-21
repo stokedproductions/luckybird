@@ -29,7 +29,7 @@ export const Dealerships = () => {
               </button>
             </div>
             <div className="">
-              <div className="mx-auto grid w-[95%] lg:w-[772px] grid-cols-2 lg:grid-cols-4 gap-5">
+              <div className="mx-auto grid w-[95%] lg:w-[772px] grid-cols-2 lg:grid-cols-4 gap-5 px-5 lg:px-0">
                 <IconCard
                   title="integrated"
                   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."

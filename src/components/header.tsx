@@ -22,11 +22,11 @@ function Header() {
     <>
       <nav
         className={
-          'absolute z-50 w-full pb-10 ' + // fixed
+          'absolute z-50 w-full pb-10' + // fixed
           `${hasBgColor ? 'bg-[#00000040] ' : 'bg-transparent'}`
         }
       >
-        <div className="mx-auto w-[90%] justify-between md:w-[60%] hideButton:flex hideButton:py-5 hideButton:pr-5">
+        <div className="mx-auto w-[90%] justify-between md:w-[60%] hideButton:flex hideButton:py-5 hideButton:pr-5 bg-black">
           <div>
             <div className="flex justify-between py-3 px-5 hideButton:block">
               <div className="relative h-[55px] w-[175px] md:h-[100px] md:w-[300px]">
@@ -83,7 +83,7 @@ function Header() {
                 navbar ? 'block' : 'hidden'
               }`}
             >
-              <ul className="ml-10 lg:flex lg:space-x-6 lg:space-y-0">
+              <ul className="ml-10 lg:flex lg:space-x-6 lg:space-y-0 mt-20 lg:mt-0">
                 <li className="py-2 text-white">
                   <Link href="#buyers">
                     <p>For Buys</p>

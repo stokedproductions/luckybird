@@ -22,7 +22,7 @@ const HeroSection = () => {
   return (
     <>
       <div
-        className="flex h-[600px] lg:h-[840px] flex-col justify-center"
+        className="flex h-[650px] lg:h-[840px] flex-col justify-center"
         style={{ backgroundImage: 'url(./hero-image.png)' }}
       >
         <div className="mx-auto w-[95%] lg:w-[60%]">
@@ -173,7 +173,7 @@ const Section3 = () => {
       <div className="flex w-full flex-col bg-[url('/Union.png')] bg-center bg-cover bg-no-repeat lg:bg-left-top" style={{aspectRatio: 1920/886}}>
         <div className="mx-auto mt-[138px] flex flex-col items-center justify-center">
           <div className="flex flex-col justify-center">
-            <h3 className="mb-[38px] text-center font-poppins text-[62px] font-semibold leading-[105%] text-white">
+            <h3 className="mb-[38px] text-center font-poppins text-[50px] lg:text-[62px] font-semibold leading-[105%] text-white">
               Private seller? <br /> We got your back
             </h3>
             <p className="mb-[36px] lg:w-[470px] text-center font-poppins text-[16px] leading-[22.4px] text-white">
@@ -183,7 +183,7 @@ const Section3 = () => {
             </p>
           </div>
           <div>
-            <div className="mx-auto grid grid-cols-2 lg:grid-cols-6 gap-5 pb-10 lg:pb-0">
+            <div className="mx-auto grid grid-cols-2 lg:grid-cols-6 gap-5 pb-10 lg:pb-0 px-5 lg:px-0">
               <IconCard
                 title="verified buys"
                 description="Secure and verified registration"
@@ -226,7 +226,7 @@ const Section4 = () => {
             <div className="grid grid-1 lg:grid-cols-2 items-center justify-center gap-10">
               <div className="flex w-full flex-col items-center justify-center">
                 <div className="mx-auto flex w-[95%] lg:w-[520px] flex-col justify-center">
-                  <h3 className="mb-[25px] font-bebas text-[24px] uppercase leading-[29px]">
+                  <h3 className="mb-[25px] font-bebas text-[24px] uppercase leading-[29px] mt-10 lg:mt-0">
                     something goes wrong?
                   </h3>
                   <p className="mb-[25px] font-poppins text-[48px] font-semibold leading-[105%]">

@@ -56,7 +56,7 @@ const HeroSection = () => {
           </div>
         </div>
         {/* <div className='w-[50px] h-[50px] rounded-full bg-white absolute bottom-5'></div> */}
-        <div className="absolute bottom-10 lg:bottom-0 w-full" style={{
+        <div className="absolute bottom-0 w-full" style={{
             aspectRatio: 1920/260
           }}>
             <Image src="/blue-top.svg" alt="blue-top" fill />

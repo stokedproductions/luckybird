@@ -22,7 +22,7 @@ const HeroSection = () => {
   return (
     <>
       <div
-        className="flex h-[840px] flex-col justify-center"
+        className="flex h-[600px] lg:h-[840px] flex-col justify-center"
         style={{ backgroundImage: 'url(./hero-image.png)' }}
       >
         <div className="mx-auto w-[95%] lg:w-[60%]">

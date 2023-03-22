@@ -56,13 +56,12 @@ const HeroSection = () => {
           </div>
         </div>
         {/* <div className='w-[50px] h-[50px] rounded-full bg-white absolute bottom-5'></div> */}
-        <div className="absolute bottom-10 lg:bottom-0 w-full" style={{
+      </div>
+      <div className="w-full -mt-[10vw]" style={{
             aspectRatio: 1920/260
           }}>
-            <Image src="/blue-top.svg" alt="blue-top" fill />
+            <Image src="/blue-top.svg" alt="blue-top" width={1920} height={260} />
         </div>
-      </div>
-      
     </>
   )
 }
@@ -129,7 +128,7 @@ const Section2 = () => {
                 malesuada habitant odio eu etiam proin odio habitant. Elit felis
                 aliquam suspendisse amet nunc. Erat.
               </p>
-              <ul className="list-inside list-disc">
+              <ul className="list-disc list-inside">
                 <li className="flex gap-2 text-[16px] text-white">
                   <Image src="/Icon.svg" width={48} height={47} alt="Icon" />
                   Secure and verified registration
@@ -183,7 +182,7 @@ const Section3 = () => {
             </p>
           </div>
           <div>
-            <div className="mx-auto grid grid-cols-2 lg:grid-cols-6 gap-5 pb-10 lg:pb-0 px-5 lg:px-0">
+            <div className="grid grid-cols-2 gap-5 px-5 pb-10 mx-auto lg:grid-cols-6 lg:pb-0 lg:px-0">
               <IconCard
                 title="verified buys"
                 description="Secure and verified registration"
@@ -223,8 +222,8 @@ const Section4 = () => {
       <div className="mx-auto my-20 w-[95%] lg:w-[60%]">
         <div>
           <div className="">
-            <div className="grid grid-1 lg:grid-cols-2 items-center justify-center gap-10">
-              <div className="flex w-full flex-col items-center justify-center">
+            <div className="grid items-center justify-center gap-10 grid-1 lg:grid-cols-2">
+              <div className="flex flex-col items-center justify-center w-full">
                 <div className="mx-auto flex w-[95%] lg:w-[520px] flex-col justify-center">
                   <h3 className="mb-[25px] font-bebas text-[24px] uppercase leading-[29px] mt-10 lg:mt-0">
                     something goes wrong?
@@ -257,7 +256,7 @@ const Section4 = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative flex w-full flex-col items-center justify-center">
+              <div className="relative flex flex-col items-center justify-center w-full">
                 <div className="w-[95%] lg:w-[470px]" style={{aspectRatio: 470/62}}>
                   <Image
                     src="/app2.png"

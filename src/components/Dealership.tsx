@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import IconCard from './IconCard';
+import IconCard from './BlueIconCard';
 
 interface dealershipType {
   isForHome?: boolean;

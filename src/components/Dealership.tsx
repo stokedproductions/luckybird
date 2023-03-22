@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import IconCard from './iconCard'
 
 export const Dealerships = () => {
@@ -8,10 +9,10 @@ export const Dealerships = () => {
       className="lg:-mt-[172px] h-[1350px] lg:h-[1455px] black-bg"
     >
       <div className="w-full">
-        <div className='w-full absolute' style={{aspectRatio: 1920/268}}>
+        <div className='absolute w-full' style={{aspectRatio: 1920/268}}>
           <Image src="/dealer-top.svg" alt="bg" fill className="absolute" />
         </div>
-        <div className="-mt-150px relative">
+        <div className="relative -mt-150px">
           <div className="mx-auto flex w-[95] lg:w-[60%] flex-col items-center justify-center">
             <div className="my-[108px] flex flex-col justify-center">
               <p className="mb-[5px] text-center text-[24px] uppercase text-white">
@@ -24,9 +25,9 @@ export const Dealerships = () => {
                 If you are a professional, we offer a desktop admin platform, to
                 allow a better and faster management of your whole business
               </p>
-              <button className="mx-auto h-[55px] w-[364px] rounded-md bg-blue-500 text-white">
-                Request a demo
-              </button>
+              <Link href="/contact" className="mx-auto h-[55px] w-[364px] rounded-md bg-blue-500 flex justify-center items-center">
+                <p className=" text-white font-poppins font-bold text-[24px]">Request a demo</p>
+              </Link>
             </div>
             <div className="">
               <div className="mx-auto grid w-[95%] lg:w-[772px] grid-cols-2 lg:grid-cols-4 gap-5 px-5 lg:px-0">

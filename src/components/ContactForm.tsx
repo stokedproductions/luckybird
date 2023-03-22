@@ -20,9 +20,9 @@ const ContactForm = () => {
       age: '',
     },
     validationSchema: Yup.object({
-      name: Yup.string().label('Full Name').required(),
-      email: Yup.string().email().required(),
-      phone: Yup.string()
+      name: Yup.string().label('Full Name').required().max(50),
+      email: Yup.string().email().required().max(50),
+      phone: Yup.string().max(13)
         .required()
         .matches(
           /^(\+?\d{0,4})?\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{4}\)?)?$/,
@@ -30,10 +30,9 @@ const ContactForm = () => {
         ),
       roleInCompany: Yup.string().oneOf(
         roles,
-        'The profession you chose does not exist',
       ),
       company: Yup.string()
-        .max(50, 'You need to be older than 15 to register')
+        .max(50)
         .required(),
     }),
     onSubmit: async (values) => {

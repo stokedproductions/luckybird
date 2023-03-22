@@ -2,19 +2,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import { Dealerships } from '@/components/Dealership'
-import IconCard from '@/components/iconCard'
+import IconCard from '../components/IconCard'
 
 export default function Home() {
   return (
-    <>
       <main>
         <HeroSection />
         <Section2 />
         <Section3 />
-        <Dealerships />
+        <Dealerships isForHome={true}/>
         <Section4 />
       </main>
-    </>
   )
 }
 
@@ -22,7 +20,7 @@ const HeroSection = () => {
   return (
     <>
       <div
-        className="flex h-[650px] lg:h-[840px] flex-col justify-center"
+        className="flex h-[650px] lg:h-[840px] flex-col justify-center bg-no-repeat w-full"
         style={{ backgroundImage: 'url(./hero-image.png)' }}
       >
         <div className="mx-auto w-[95%] lg:w-[60%]">

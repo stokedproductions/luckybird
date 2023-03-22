@@ -34,7 +34,7 @@ export const TextImportField: React.FC<TextFieldType> = ({
   errors,
 }) => {
   return (
-    <div className="relative mb-16">
+    <div className="relative mb-[84px]">
       <input
         type="text"
         id={id}

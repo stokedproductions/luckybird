@@ -22,7 +22,7 @@ function Header() {
     <>
       <nav
         className={
-          'absolute z-50 w-full pb-10' + // fixed
+          'absolute z-50 w-full pb-10 lg:fixed ' + 
           `${hasBgColor ? 'bg-[#00000040] ' : 'bg-transparent'}`
         }
       >
@@ -80,7 +80,7 @@ function Header() {
           <div>
             <div
               className={`mt-8 flex-1 justify-self-center pb-3 lg:mt-0 lg:pb-0 xl:block ${
-                navbar ? 'block' : 'hidden'
+                navbar ? 'block bg-black' : 'hidden'
               }`}
             >
               <ul className="ml-10 lg:flex lg:space-x-6 lg:space-y-0 mt-20 lg:mt-0">
@@ -104,7 +104,7 @@ function Header() {
                     <p>Security</p>
                   </Link>
                 </li>
-                <li className="rounded-md bg-blue-400 py-2 px-5 text-white">
+                <li className="rounded-md bg-blue-400 py-2 px-2 lg:px-5 text-white w-[140px]">
                   <a href="https://www.luckybeard.com" target="blank">
                     <p>Dealers Login</p>
                   </a>

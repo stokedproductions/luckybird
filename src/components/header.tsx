@@ -26,7 +26,7 @@ function Header() {
           `${hasBgColor ? 'bg-[#00000040] ' : 'bg-transparent'}`
         }
       >
-        <div className="mx-auto w-[90%] justify-between md:w-[60%] hideButton:flex hideButton:py-5 hideButton:pr-5 bg-black">
+        <div className="mx-auto w-[90%] justify-between md:w-[60%] hideButton:flex hideButton:py-5 hideButton:pr-5">
           <div>
             <div className="flex justify-between py-3 px-5 hideButton:block">
               <div className="relative h-[55px] w-[175px] md:h-[100px] md:w-[300px]">

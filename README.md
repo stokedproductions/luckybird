@@ -33,7 +33,7 @@ npm install
 ### 3. Create your .env file in the root directory of your project
 These are fields needed to use SENDGRID to make the contact form send email notifications
 ```bash
-NOTIFICATION_EMAILS=example@excample.com
+NOTIFICATION_EMAILS=example@example.com,secondemail@example.com
 SENDGRID_API_TOKEN=YOUR_TOKEN_HERE
 
 ```
@@ -53,11 +53,9 @@ I Choose to use Tailwind CSS for my project, as it allows rapid development and 
 
 I had to use some standard css as well.
 
-## Issues faced
+## Issues faced && If I had more time
 
-I did find it hard to do the curves, in the end I used SVG images when needed but I would have liked to have done it all with CSS. I had issues getting everything to line up nicely when the screen goes beyond 1920px that the design was made.
-
-## If I had more time
+I did find it hard to do the curves, in the end I used SVG images when needed but I would have liked to have done it all with CSS. I had issues getting everything to line up nicely when the screen goes beyond 1920px that the design was made. I had to give the page a max-width of 1920px as per the design. I don't like that but under the time constraints it was a trade off to keep to the desinger
 
 If there was more time I would have liked to do more on the mobile screen.
 

@@ -5,7 +5,7 @@ import Articles from '@/components/Articles'
 
 const Contact = () => {
   return (
-    <div>
+    <div className='bg-black'>
       <ContactForm />
       <Dealerships />
       <Articles />

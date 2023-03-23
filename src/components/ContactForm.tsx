@@ -65,7 +65,10 @@ const ContactForm = () => {
   })
 
   return (
-    <div className="w-full bg-blue-500 pt-[200px] pb-[100px] lg:py-[200px]">
+    <div className="w-full bg-blue-500 pt-[200px] pb-[100px] lg:pb-[100px]"
+      style={{ backgroundImage: 'url(./dealer-top.svg)', 
+              backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom center'}}
+    >
       <div>
         <div className="mx-auto flex w-[95%] flex-col items-center justify-center lg:w-[800px]">
           <h1 className="mb-[25px] text-center font-poppins text-[62px] font-semibold leading-[105%] text-white">

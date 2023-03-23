@@ -12,15 +12,12 @@ export const Dealerships: React.FC<dealershipType> = ({ isForHome }) => {
       id="dealerships"
       className={`${
         isForHome
-          ? 'h-[1350px] xl:-mt-[172px] lg:h-[1455px] '
-          : ' h-[1150px] lg:-mt-[342px] lg:h-[1255px] xl: '
+          ? 'min-h-[1350px] xl:-mt-[172px] lg:h-[1455px] pb-[0]'
+          : ' h-[1150px] lg:-mt-[172px] lg:h-[1255px]'
       } 
       black-bg`}
     >
       <div className="w-full">
-        {/* <div className="absolute w-full max-w-[1920px]" style={{ aspectRatio: 1920 / 268 }}>
-          <Image src="/dealer-top.svg" alt="bg" fill className="absolute" />
-        </div> */}
         <div className="relative">
           <div className="mx-auto flex w-[95] flex-col items-center justify-center lg:w-[60%]">
             {isForHome && (
@@ -45,7 +42,7 @@ export const Dealerships: React.FC<dealershipType> = ({ isForHome }) => {
                 </Link>
               </div>
             )}
-            <div className={`${isForHome ? '' : 'mt-[358px]'}`}>
+            <div className={`${isForHome ? '' : 'mt-[50px] lg:mt-[358px]'}`}>
               <div className="mx-auto grid w-[95%] grid-cols-2 gap-5 px-5 lg:w-[772px] lg:grid-cols-4 lg:px-0">
                 <IconCard
                   title="integrated"

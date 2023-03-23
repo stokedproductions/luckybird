@@ -1,4 +1,4 @@
-import { Dealerships } from '@/components/Dealership'
+import { Dealerships } from '@/components/CommonCompoents/Dealership'
 import HeroSection from '@/components/HomePageComponents/HeroSection'
 import Buyers from '@/components/HomePageComponents/Buyers'
 import Sellers from '@/components/HomePageComponents/Sellers'

@@ -12,7 +12,7 @@ export const Dealerships: React.FC<dealershipType> = ({ isForHome }) => {
       id="dealerships"
       className={`${
         isForHome
-          ? 'min-h-[1350px] xl:-mt-[172px] lg:h-[1455px] pb-[0]'
+          ? ' xl:-mt-[172px] h-[50%] lg:h-[1380px] pb-[0]'
           : ' h-[1150px] lg:-mt-[172px] lg:h-[1255px]'
       } 
       black-bg`}

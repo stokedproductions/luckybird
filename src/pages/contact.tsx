@@ -1,7 +1,7 @@
-import { Dealerships } from '@/components/Dealership'
-import ContactForm from '@/components/ContactForm'
+import { Dealerships } from '@/components/CommonCompoents/Dealership'
+import ContactForm from '@/components/ContactPageComponents/ContactForm'
 import React, { useEffect, useState } from 'react'
-import Articles from '@/components/Articles'
+import Articles from '@/components/ContactPageComponents/Articles'
 
 const Contact = () => {
   return (

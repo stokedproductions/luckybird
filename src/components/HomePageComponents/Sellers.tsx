@@ -1,5 +1,5 @@
 import React from 'react'
-import IconCard from '../BlueIconCard'
+import IconCard from '../CommonCompoents/BlueIconCard'
 
 const Sellers = () => {
     return (

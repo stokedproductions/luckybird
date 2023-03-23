@@ -2,10 +2,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <>
+    <div className='max-w-[1920px]'>
       <div className="h-[140px] w-full bg-black"></div>
       <div className="flex h-[76px] w-full items-center justify-center bg-[#6F7889]">
-        <p className="font-poppins text-[13px] text-[#D4D7DD] p-5">
+        <p className="p-5 font-poppins text-[13px] text-[#D4D7DD]">
           Dealr Automotive Limited
           <span className="mx-5">|</span>
           Registration number: 629444
@@ -13,7 +13,7 @@ const Footer = () => {
           Dublin 2 D02 XY47, Dublin, Ireland
         </p>
       </div>
-    </>
+    </div>
   )
 }
 

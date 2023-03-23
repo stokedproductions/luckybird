@@ -19,7 +19,7 @@ const bebasNeue = Bebas_Neue({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${poppins.variable} ${bebasNeue.variable} font-sans`}>
+    <main className={`max-w-[1920px] mx-auto ${poppins.variable} ${bebasNeue.variable} font-sans`}>
       <Header />
       <Component {...pageProps} />
       <Footer />

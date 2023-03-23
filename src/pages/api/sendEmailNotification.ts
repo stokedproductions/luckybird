@@ -1,15 +1,15 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiRequest, NextApiResponse } from 'next'
 
-const sgMail = require('@sendgrid/mail');
+const sgMail = require('@sendgrid/mail')
 
-const handler = async (request:NextApiRequest, response:NextApiResponse) => {
-  console.log('SEND EMAIL');
+const handler = async (request: NextApiRequest, response: NextApiResponse) => {
+  console.log('SEND EMAIL')
   const mailString = process.env.NOTIFICATION_EMAILS
-  const mailTo = mailString?.split(',');
+  const mailTo = mailString?.split(',')
 
-  sgMail.setApiKey(process.env.SENDGRID_API_TOKEN);
-  const {name, email, phone, company, roleInCompany} = request.body;
-  
+  sgMail.setApiKey(process.env.SENDGRID_API_TOKEN)
+  const { name, email, phone, company, roleInCompany } = request.body
+
   const msg = `
   Good News,\r\n\r\n
   We have a form submittion,\r\n\r\n
@@ -18,7 +18,7 @@ const handler = async (request:NextApiRequest, response:NextApiResponse) => {
   Phone: ${phone},\r\n
   Company: ${company},\r\n
   Role: ${roleInCompany}\r\n
-`;
+`
 
   try {
     await sgMail.send({
@@ -27,11 +27,11 @@ const handler = async (request:NextApiRequest, response:NextApiResponse) => {
       subject: 'Form Submittion',
       text: msg,
       html: msg.replace(/\r\n/g, '<br>'),
-    });
-    response.status(200).json({ text_status: 'Message sent successfully.' });
+    })
+    response.status(200).json({ text_status: 'Message sent successfully.' })
   } catch (error) {
-    response.status(400).json({ text_status: 'Message not sent.' });
+    response.status(400).json({ text_status: 'Message not sent.' })
   }
-};
+}
 
-export default handler;
+export default handler

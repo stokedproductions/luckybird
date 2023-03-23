@@ -5,9 +5,9 @@ import * as Yup from 'yup'
 import { stringify } from 'querystring'
 
 const ContactForm = () => {
-  const [formSubmitting, setFormSubmitting] = useState(false);
-  const [formSubmited, setFromSubmitted] = useState(false);
-  const [formSubmitHadError, setSubmitHadError] = useState(false);
+  const [formSubmitting, setFormSubmitting] = useState(false)
+  const [formSubmited, setFromSubmitted] = useState(false)
+  const [formSubmitHadError, setSubmitHadError] = useState(false)
 
   const roles = ['Developer', 'QA Analyst', 'Business Analyst']
   const formik = useFormik({
@@ -22,47 +22,44 @@ const ContactForm = () => {
     validationSchema: Yup.object({
       name: Yup.string().label('Full Name').required().max(50),
       email: Yup.string().email().required().max(50),
-      phone: Yup.string().max(13)
+      phone: Yup.string()
+        .max(13)
         .required()
         .matches(
           /^(\+?\d{0,4})?\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{4}\)?)?$/,
           'Please Provide a valid response',
         ),
-      roleInCompany: Yup.string().oneOf(
-        roles,
-      ),
-      company: Yup.string()
-        .max(50)
-        .required(),
+      roleInCompany: Yup.string().oneOf(roles),
+      company: Yup.string().max(50).required(),
     }),
     onSubmit: async (values) => {
-      setFormSubmitting(true);
+      setFormSubmitting(true)
       try {
         const sendForm = await fetch('/api/sendEmailNotification', {
-          method: "POST",
-          mode: "cors",
-          cache: "no-cache",
-          credentials: "same-origin",
+          method: 'POST',
+          mode: 'cors',
+          cache: 'no-cache',
+          credentials: 'same-origin',
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
-          redirect: "follow",
-          referrerPolicy: "no-referrer",
+          redirect: 'follow',
+          referrerPolicy: 'no-referrer',
           body: JSON.stringify(values),
-        });
-        const status = await sendForm.status;
+        })
+        const status = await sendForm.status
         if (status === 200) {
-          setFromSubmitted(true) 
+          setFromSubmitted(true)
           setFormSubmitting(false)
         } else if (status === 400) {
-          setFromSubmitted(true) 
+          setFromSubmitted(true)
           setFormSubmitting(false)
-          setSubmitHadError(true);
+          setSubmitHadError(true)
         }
       } catch {
-          setFromSubmitted(true) 
-          setFormSubmitting(false)
-          setSubmitHadError(true);
+        setFromSubmitted(true)
+        setFormSubmitting(false)
+        setSubmitHadError(true)
       }
     },
   })
@@ -70,16 +67,16 @@ const ContactForm = () => {
   return (
     <div className="w-full bg-blue-500 pt-[200px] pb-[100px] lg:py-[200px]">
       <div>
-        <div className="mx-auto flex w-[95%] lg:w-[800px] flex-col items-center justify-center">
-          <h1 className="mb-[25px] text-center text-[62px] text-white font-poppins font-semibold leading-[105%]">
+        <div className="mx-auto flex w-[95%] flex-col items-center justify-center lg:w-[800px]">
+          <h1 className="mb-[25px] text-center font-poppins text-[62px] font-semibold leading-[105%] text-white">
             Request a Demo
           </h1>
-          <p className="w-[80%] lg:w-[450px] mx-auto text-center text-white font-poppins text-[16px] leading-[140%]">
+          <p className="mx-auto w-[80%] text-center font-poppins text-[16px] leading-[140%] text-white lg:w-[450px]">
             If you are a professional, we offer a desktop admin platform, to
             allow a better and faster management of your whole business
           </p>
         </div>
-        <div className="mx-auto mt-[108px] w-[95%] lg:w-[873px] rounded-3xl bg-white p-10 shadow-lg z-20 relative">
+        <div className="relative z-20 mx-auto mt-[108px] w-[95%] rounded-3xl bg-white p-10 shadow-lg lg:w-[873px]">
           <h2 className="mb-[20px] font-poppins text-[42px] font-semibold">
             Please fill your application
           </h2>
@@ -139,10 +136,21 @@ const ContactForm = () => {
               <div>
                 <button
                   type="submit"
-                  disabled={!formik.dirty || !formik.isValid || formSubmitting || formSubmited}
+                  disabled={
+                    !formik.dirty ||
+                    !formik.isValid ||
+                    formSubmitting ||
+                    formSubmited
+                  }
                   className=" h-[116px] w-full rounded-xl bg-blue-500 text-[30px] font-semibold text-white disabled:bg-[#E9EBEF]"
                 >
-                  {formSubmitting ? "Submitting" : formSubmited ? "Form Submitted Successfully!!!" : formSubmitHadError ? "Something went wrong" : "Submit"}
+                  {formSubmitting
+                    ? 'Submitting'
+                    : formSubmited
+                    ? 'Form Submitted Successfully!!!'
+                    : formSubmitHadError
+                    ? 'Something went wrong'
+                    : 'Submit'}
                 </button>
               </div>
             </form>

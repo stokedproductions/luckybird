@@ -12,9 +12,10 @@
   border-top-right-radius: 50% 100%;
   position: absolute;
   width: 100%;
+  max-width: 1920px;
   background-color: white;
   height: 146px;
-  margin-top: -140px;
+  margin-top: -225px;
 }
 
 .black-bg {
@@ -23,10 +24,13 @@
 
 @media (min-width: 1024px) {
   .black-bg {
-    background: linear-gradient(180deg, #00000000 0%, #000000ff 12%, #000000ff 100%);
+    background: linear-gradient(
+      180deg,
+      #00000000 0%,
+      #000000ff 12%,
+      #000000ff 100%
+    );
+  }
 }
-}
 
-
-
-@media(min-win)
+@media (min-win);
